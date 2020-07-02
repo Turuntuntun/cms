@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Motiva Sans', sans-serif;
+  src: url(/fonts/motiva-sans-webfont.ttf);
+}
+
 a {
   text-decoration: none;
 }
@@ -6,31 +11,22 @@ body {
   background-image: url(/img/main-bg.png);
 }
 
-@media (min-width: 1442px) {
-  .home-page-content {
-    padding-right: 234px;
-  }
+.global-header {
+  font-family: "Motiva Sans", Helvetica, Arial, sans-serif;
+  background-color: #171a21;
 }
 
-@media (min-width: 1224px) {
-  .home-page-content {
-    padding-left: 234px;
-  }
-}
-
-.global_header {
-  font-family: "Motiva Sans", Sans-serif;
-  background: #171a21;
-}
-
-.global_header .content {
+.global-header .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 960px;
+  min-width: 100%;
   height: 104px;
   margin: 0 auto;
   position: relative;
@@ -39,12 +35,30 @@ body {
   z-index: 1;
 }
 
-.global_header .content .header_logo {
+@media (max-width: 1280px) {
+  .global-header .content {
+    height: 62px;
+  }
+}
+
+.global-header .content .header-logo {
   height: 44px;
   padding-left: 8px;
 }
 
-.global_header .content .supernav .supernav-menu .supernav-menuitem .dropdown-menu {
+@media (max-width: 1280px) {
+  .global-header .content .header-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .global-header .content .supernav {
+    display: none;
+  }
+}
+
+.global-header .content .supernav .supernav-menu .supernav-menuitem .dropdown-menu {
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
@@ -54,39 +68,39 @@ body {
   display: none;
 }
 
-.global_header .content .supernav .supernav-menu .supernav-menuitem:hover > .dropdown-menu,
-.global_header .content .supernav .supernav-menu .supernav-menuitem .dropdown-menu:hover {
+.global-header .content .supernav .supernav-menu .supernav-menuitem:hover > .dropdown-menu,
+.global-header .content .supernav .supernav-menu .supernav-menuitem .dropdown-menu:hover {
   visibility: visible;
   opacity: 1;
   display: block;
 }
 
-.global_header .content .supernav .supernav-menu .supernav-menuitem .dropdown-menu .dropdown-menu__item {
+.global-header .content .supernav .supernav-menu .supernav-menuitem .dropdown-menu .dropdown-menu__item {
   clear: both;
   width: 100%;
 }
 
-.global_header .content .supernav-menuitem {
+.global-header .content .supernav-menuitem {
   position: relative;
   left: -9px;
   display: inline-block;
 }
 
-.global_header .content .supernav-menuitem__link {
+.global-header .content .supernav-menuitem__link {
   text-decoration: none;
   color: #b8b6b4;
   font-size: 14px;
   padding-right: 9px;
 }
 
-.global_header .content .supernav-menuitem .dropdown-menu {
+.global-header .content .supernav-menuitem .dropdown-menu {
   background: darkorange;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
 
-.global_header .content .supernav-menuitem .dropdown-menu__item {
+.global-header .content .supernav-menuitem .dropdown-menu__item {
   color: #fff;
   font-size: 11px;
   background: #000;
@@ -100,19 +114,19 @@ body {
   line-height: 0;
 }
 
-.global_header .content .supernav-menuitem .dropdown-menu__item:hover > .dropdown-menu__link {
+.global-header .content .supernav-menuitem .dropdown-menu__item:hover > .dropdown-menu__link {
   cursor: pointer;
   color: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.global_header .content .supernav-menuitem .dropdown-menu__link {
+.global-header .content .supernav-menuitem .dropdown-menu__link {
   color: #b8b6b4;
   text-decoration: none;
 }
 
-.global_header .content .global_actions {
+.global-header .content .global_actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,13 +138,19 @@ body {
   line-height: 25px;
 }
 
-.global_header .content .global_actions_menu {
+@media (max-width: 1280px) {
+  .global-header .content .global_actions {
+    display: none;
+  }
+}
+
+.global-header .content .global_actions_menu {
   vertical-align: top;
   display: inline-block;
   margin-right: 9px;
 }
 
-.global_header .content .global_actions .header_installsteam_btn_content {
+.global-header .content .global_actions .header_installsteam_btn_content {
   background-color: #5c7e10;
   display: inline-block;
   padding-left: 35px;
@@ -144,43 +164,79 @@ body {
   font-weight: normal;
 }
 
-.global_header .content .global_actions__link {
+.global-header .content .global_actions__link {
   color: #b8b6b4;
   text-decoration: none;
   cursor: pointer;
 }
 
-.global_header .content .global_actions__symbol {
+.global-header .content .global_actions__symbol {
   margin: 0 7px;
+}
+
+.responsive-header .responsive-nav .responsive-nav__burger {
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  width: 35px;
+  height: 31px;
+}
+
+@media (min-width: 1280px) {
+  .responsive-header .responsive-nav {
+    display: none;
+  }
+}
+
+.responsive-header .responsive-nav .responsive-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.responsive-header .responsive-nav .responsive-wrapper .responsive-nav__logo {
+  position: absolute;
+  top: 0;
+  padding: 13px;
+  width: 156px;
+  height: 36px;
 }
 
 .bannerHome {
   font-family: "Motiva Sans", Sans-serif;
-  background-color: #1a2c3d;
   background-image: url(https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/7a050751ecd602b05f279736/page_bg_russian.png?t=1592230008);
   background-repeat: no-repeat;
   height: 450px;
   background-position-x: 27px;
-}
-
-.bannerHome .home {
-  left: -5px;
-  position: relative;
-  width: 1010px;
-  margin: 0 auto;
+  background-size: contain;
 }
 
 .bannerHome .home-menu {
   position: relative;
   top: 30px;
+  left: -5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   margin: 0 auto;
+}
+
+@media (max-width: 970px) {
+  .bannerHome .home-menu {
+    display: inline;
+    position: relative;
+    top: 0;
+  }
 }
 
 .bannerHome .home-menu-item {
@@ -218,14 +274,16 @@ body {
 }
 
 .bannerHome .home-menu-item__link {
-  position: relative;
-  top: 2px;
   text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
   font-size: 13px;
-  line-height: 33px;
-  font-weight: 300;
+  line-height: 36px;
   color: #d9dadd;
-  text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+  .bannerHome .home-menu-item__link {
+    font-size: 11px;
+  }
 }
 
 .bannerHome .home-menu-item__img {
@@ -276,6 +334,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 1280px) {
+  .bannerHome .home-menu-item .dropdown-menu__link {
+    font-size: 11px;
+  }
 }
 
 .bannerHome .home-menu-item .dropdown-menu__subparagraph {
@@ -967,5 +1031,28 @@ body {
 .home-page-content .carousel-thumbs .active,
 .home-page-content .carousel-thumbs .carousel-thumbs__switch:hover {
   background-color: #788692;
+}
+
+@media (min-width: 1442px) {
+  .home-page-content {
+    padding-right: 234px;
+  }
+}
+
+@media (min-width: 1224px) {
+  .home-page-content {
+    padding-left: 234px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .global-header .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

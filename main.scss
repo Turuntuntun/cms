@@ -1,38 +1,57 @@
+@import "variables.scss";
+@import "media.scss";
+
 a {
     text-decoration: none;
 }
 body {
     background-image: url(/img/main-bg.png);
 }
-@media (min-width: 1442px) {
-    .home-page-content {
-        padding-right: 234px;
-    }
-}
-@media (min-width: 1224px) {
-    .home-page-content {
-        padding-left: 234px;
-    }
-}
 
-.global_header {
-    font-family: "Motiva Sans", Sans-serif;
-    background: #171a21;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global-header {
+    font-family: $mainFont;
+    background-color: $bgHeader;
     .content {
         display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        max-width: 960px;
+        min-width: 100%;
         height: 104px;
         margin: 0 auto;
         position: relative;
         top: 0px;
         left: 2px;
         z-index: 1;
-        .header_logo {
+        @media (max-width: 1280px){
+            height: 62px;
+            // padding: 5px;
+        }
+        .header-logo {
             height: 44px;
             padding-left: 8px;
+        @media (max-width:1280px){
+            display: none;
+        }
         }
         .supernav {
+            @media (max-width: 1280px){   //скрываем меню
+                display: none;
+            }
             .supernav-menu .supernav-menuitem .dropdown-menu {
                 visibility: hidden;
                 opacity: 0;
@@ -100,6 +119,9 @@ body {
             top: -34px;
             left: 111px;
             line-height: 25px;
+            @media (max-width: 1280px){     // скрываем кнопку Установка, войти и язык
+                display: none;
+            }
             &_menu {
                 vertical-align: top;
                 display: inline-block;
@@ -130,25 +152,67 @@ body {
     }
 }
 
+
+// //////////////////////////////////////////////////////////////////////////////////////////
+.responsive-header{
+    .responsive-nav {
+        .responsive-nav__burger {
+            position: absolute;
+            padding: 10px;
+            // top: 10px;
+            // left: 10px;
+            top: 0;
+            width: 35px;
+            height: 31px;
+        }
+        @media (min-width: 1280px) {
+            display: none;
+        }
+        .responsive-wrapper{
+            display: flex;
+            justify-content: center;
+            .responsive-nav__logo{
+                position: absolute;
+                // top: 10px;
+                top: 0;
+                padding: 13px;
+                width: 156px;
+                height: 36px;
+            }
+        }
+    }
+}
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 .bannerHome {
     font-family: "Motiva Sans", Sans-serif;
-    background-color: rgb(26, 44, 61);
+    // background-color: rgb(26, 44, 61);
     background-image: url(https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/7a050751ecd602b05f279736/page_bg_russian.png?t=1592230008);
     background-repeat: no-repeat;
     height: 450px;
     background-position-x: 27px;
+    background-size: contain;
     .home {
-        left: -5px; // подгонка к стим-меню
-        position: relative;
-        width: 1010px;
-        margin: 0 auto;
+      
         &-menu {
             position: relative;
             top: 30px;
+            left: -5px;
             align-items: center;
             display: flex;
+            justify-content: center;
             list-style: none;
             margin: 0 auto;
+            @media (max-width: 970px){
+                display: inline;
+                position: relative;
+                top: 0;
+            }
             &-item {
                 height: 36px;
                 padding-left: 15px;
@@ -175,16 +239,14 @@ body {
                     display: block;
                     transition: 1s;
                 }
-
                 &__link {
-                    position: relative;
-                    top: 2px;
                     text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.25);
                     font-size: 13px;
-                    line-height: 33px;
-                    font-weight: 300;
+                    line-height: 36px;
                     color: #d9dadd;
-                    text-decoration: none;
+                    @media (max-width:1280px){
+                        font-size: 11px;
+                    }
                 }
                 &__img {
                     width: 19px;
@@ -224,6 +286,9 @@ body {
                         font-size: 13px;
                         color: #000;
                         display: flex;
+                        @media (max-width: 1280px){
+                            font-size: 11px;
+                        }
                     }
                     &__subparagraph {
                         color: #4f94bc;
@@ -810,6 +875,28 @@ body {
         .active,
         .carousel-thumbs__switch:hover {
             background-color: rgb(120, 134, 146);
+        }
+    }
+}
+
+
+
+@media (min-width: 1442px) {
+    .home-page-content {
+        padding-right: 234px;
+    }
+}
+@media (min-width: 1224px) {
+    .home-page-content {
+        padding-left: 234px;
+    }
+}
+@media (max-width: 1160px) {
+    .global-header .content {
+        display: flex;
+        justify-content: center;
+        .supernav{
+
         }
     }
 }
