@@ -37,7 +37,7 @@ function plusStocks(n) {
   showStocks(slideIndex += n);
 }
 
-function currentSlide(n) {
+function curSlide(n) {
   showStocks(slideIndex = n);
 }
 

@@ -8,48 +8,35 @@ body {
     background-image: url(/img/main-bg.png);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .global-header {
     font-family: $mainFont;
     background-color: $bgHeader;
+    width: 100%;
     .content {
         display: flex;
         // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        min-width: 100%;
         height: 104px;
         margin: 0 auto;
         position: relative;
         top: 0px;
         left: 2px;
         z-index: 1;
-        @media (max-width: 1280px){
+        @media (max-width: 1280px) {
             height: 62px;
             // padding: 5px;
         }
         .header-logo {
             height: 44px;
             padding-left: 8px;
-        @media (max-width:1280px){
-            display: none;
-        }
+            @media (max-width: 1280px) {
+                display: none;
+            }
         }
         .supernav {
-            @media (max-width: 1280px){   //скрываем меню
+            @media (max-width: 1280px) {
+                //скрываем меню
                 display: none;
             }
             .supernav-menu .supernav-menuitem .dropdown-menu {
@@ -119,7 +106,8 @@ body {
             top: -34px;
             left: 111px;
             line-height: 25px;
-            @media (max-width: 1280px){     // скрываем кнопку Установка, войти и язык
+            @media (max-width: 1280px) {
+                // скрываем кнопку Установка, войти и язык
                 display: none;
             }
             &_menu {
@@ -152,15 +140,12 @@ body {
     }
 }
 
-
 // //////////////////////////////////////////////////////////////////////////////////////////
-.responsive-header{
+.responsive-header {
     .responsive-nav {
         .responsive-nav__burger {
             position: absolute;
             padding: 10px;
-            // top: 10px;
-            // left: 10px;
             top: 0;
             width: 35px;
             height: 31px;
@@ -168,12 +153,11 @@ body {
         @media (min-width: 1280px) {
             display: none;
         }
-        .responsive-wrapper{
+        .responsive-wrapper {
             display: flex;
             justify-content: center;
-            .responsive-nav__logo{
+            .responsive-nav__logo {
                 position: absolute;
-                // top: 10px;
                 top: 0;
                 padding: 13px;
                 width: 156px;
@@ -184,21 +168,20 @@ body {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
 .bannerHome {
     font-family: "Motiva Sans", Sans-serif;
-    // background-color: rgb(26, 44, 61);
-    background-image: url(https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/7a050751ecd602b05f279736/page_bg_russian.png?t=1592230008);
-    background-repeat: no-repeat;
-    height: 450px;
-    background-position-x: 27px;
-    background-size: contain;
+    &-img {
+        object-fit: cover;
+        width: 100%;
+    }
     .home {
-      
+        width: 100%;
+        @media (min-width: 970px) {
+            position: absolute;
+        }
+        @media (max-width: 970px) {
+            height: 252px;
+        }
         &-menu {
             position: relative;
             top: 30px;
@@ -208,10 +191,13 @@ body {
             justify-content: center;
             list-style: none;
             margin: 0 auto;
-            @media (max-width: 970px){
+            width: auto;
+            @media (max-width: 970px) {
                 display: inline;
+                width: auto;
                 position: relative;
-                top: 0;
+                top: -18px;
+                left: 1px;
             }
             &-item {
                 height: 36px;
@@ -244,7 +230,7 @@ body {
                     font-size: 13px;
                     line-height: 36px;
                     color: #d9dadd;
-                    @media (max-width:1280px){
+                    @media (max-width: 1280px) {
                         font-size: 11px;
                     }
                 }
@@ -256,9 +242,10 @@ body {
                     left: 4px;
                 }
                 .dropdown-menu {
-                    visibility: hidden;
+                    // visibility: hidden;
                     position: absolute;
                     top: 36px;
+                    z-index: 1;
                     transition: all 0.5s ease;
                     left: 0;
                     display: none;
@@ -270,7 +257,11 @@ body {
                     &#dropdown-menu-col-2 {
                         position: absolute;
                         left: 202px;
-                        min-height: 290px; // костыль для выравнивания 2-х меню
+                        height: 330px; // костыль для выравнивания 2-х меню
+                    }
+                    @media (max-width: 970px) {
+                        width: 100%;
+                        height: 330px;  // костыль для выравнивания 2-х меню
                     }
                     &__item {
                         min-width: 0;
@@ -281,12 +272,12 @@ body {
                         transition: 0.2s;
                     }
                     &__link {
-                        padding: 5px 14px;
+                        padding: 7px 14px;
                         font-family: "Motiva Sans", Sans-serif;
                         font-size: 13px;
                         color: #000;
                         display: flex;
-                        @media (max-width: 1280px){
+                        @media (max-width: 1280px) {
                             font-size: 11px;
                         }
                     }
@@ -308,6 +299,10 @@ body {
                     height: 36px;
                     padding-right: 4px;
                     background-color: rgba(55, 113, 151, 0.8);
+                    @media (max-width:970px) {
+                        display: flex;
+                        justify-content: center;
+                    }
                     .border-form {
                         position: relative;
                         top: 4px;
@@ -318,9 +313,17 @@ body {
                         border: 1px solid rgba(0, 0, 0, 0.3);
                         box-shadow: 1px 1px 0px rgba(255, 255, 255, 0.2);
                         background-color: rgb(50, 98, 130);
+                        @media (max-width:970px) {
+                            width: 99%;
+                            margin: 0;
+                        }
                         .search-form {
                             display: flex;
                             align-items: center;
+                            @media (max-width:970px) {
+                                display: flex;
+                                justify-content: space-between;
+                            }
                             &-text {
                                 background: #000;
                                 font-family: "Motiva Sans", Sans-serif;
@@ -340,6 +343,10 @@ body {
                             &__icon {
                                 position: relative;
                                 left: 9px;
+                                @media (max-width:970px) {
+                                    position: relative;
+                                    left: 0;
+                                }
                             }
                         }
                     }
@@ -879,8 +886,6 @@ body {
     }
 }
 
-
-
 @media (min-width: 1442px) {
     .home-page-content {
         padding-right: 234px;
@@ -895,8 +900,7 @@ body {
     .global-header .content {
         display: flex;
         justify-content: center;
-        .supernav{
-
+        .supernav {
         }
     }
 }
