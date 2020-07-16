@@ -15,3 +15,5 @@ spl_autoload_register(function ($class_name) {
 });
 session_start();
 $parse = new parse('https://store.steampowered.com/?l=russian');
+$parse->get_site();
+$parse->incude_phpQuery('phpQuery-onefile.php');
