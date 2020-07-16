@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPLATE</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+
+
+    <div class="global-header">
+        <div class="content">
+
+            <img class="header-logo"
+                src="https://steamstore-a.akamaihd.net/public/shared/images/header/globalheader_logo.png?t=962016"
+                alt="">
+            <div class="supernav">
+
+
+                <ul class="supernav-menu">
+                    <li class="supernav-menuitem"><a class="supernav-menuitem__link" href="#">МАГАЗИН</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ПОПУЛЯРНОЕ</a></li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">СПИСОК ЖЕЛАЕМОГО</a>
+                            </li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">НОВОСТИ</a></li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">СТАТИСТИКА</a></li>
+                        </ul>
+                    </li>
+                    <li class="supernav-menuitem"><a class="supernav-menuitem__link" href="#">СООБЩЕСТВО</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ГЛАВНАЯ</a></li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ОБСУЖДЕНИЯ</a></li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">МАСТЕРСКАЯ</a></li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ТОРГОВАЯ
+                                    <pre></pre> ПЛОЩАДКА</a></li>
+                            <li class="dropdown-menu__item"><a class="dropdown-menu__link" href="#">ТРАНСЛЯЦИЯ</a></li>
+                        </ul>
+                    </li>
+                    <li class="supernav-menuitem"><a class="supernav-menuitem__link" href="#">О STEAM</a></li>
+                    <li class="supernav-menuitem"><a class="supernav-menuitem__link" href="#">ПОДДЕРЖКА</a></li>
+                </ul>
+            </div>
+            <div class="global_actions">
+                <div class="global_actions_menu">
+                    <div class="headerInstallsteam_btn">
+                        <a class="header_installsteam_btn_content"
+                            href="https://store.steampowered.com/about/?snr=1_4_4__global-header">
+                            Установить Steam
+                        </a>
+                    </div>
+                </div>
+                <a class="global_actions__link"
+                    href="https://store.steampowered.com/login/?redir=%3Fsnr%3D1_14_4__global-header&redir_ssl=1&snr=1_4_4__global-header">
+                    войти
+                </a>
+                <span class="global_actions__symbol">&nbsp;|&nbsp;</span>
+                <span class="pulldown global_actions__link" id="language_pulldown"
+                    onclick="ShowMenu( this, 'language_dropdown', 'right' );" wfd-id="1020">язык</span>
+
+                <div class="popup_block_new" id="language_dropdown"
+                    style="visibility: visible; top: 25px; left: -64.1094px; display: none; opacity: 1;" wfd-id="1019">
+                    <!-- <di class="popup_body popup_menu">
+        <a class="popup_menu_item tight" href="?l=schinese&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'schinese' ); return false;">简体中文 (упрощенный китайский)</a>
+        <a class="popup_menu_item tight" href="?l=tchinese&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'tchinese' ); return false;">繁體中文 (традиционный китайский)</a>
+        <a class="popup_menu_item tight" href="?l=japanese&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'japanese' ); return false;">日本語 (японский)</a>
+        <a class="popup_menu_item tight" href="?l=koreana&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'koreana' ); return false;">한국어 (корейский)</a>
+        <a class="popup_menu_item tight" href="?l=thai&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'thai' ); return false;">ไทย (тайский)</a>
+        <a class="popup_menu_item tight" href="?l=bulgarian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'bulgarian' ); return false;">Български (болгарский)</a>
+        <a class="popup_menu_item tight" href="?l=czech&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'czech' ); return false;">Čeština (чешский)</a>
+        <a class="popup_menu_item tight" href="?l=danish&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'danish' ); return false;">Dansk (датский)</a>
+        <a class="popup_menu_item tight" href="?l=german&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'german' ); return false;">Deutsch (немецкий)</a>
+        <a class="popup_menu_item tight" href="?l=english&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'english' ); return false;">English (английский)</a>
+        <a class="popup_menu_item tight" href="?l=spanish&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'spanish' ); return false;">Español - España (испанский)</a>
+        <a class="popup_menu_item tight" href="?l=latam&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'latam' ); return false;">Español - Latinoamérica (испанский Лат.
+            Ам.)</a>
+        <a class="popup_menu_item tight" href="?l=greek&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'greek' ); return false;">Ελληνικά (греческий)</a>
+        <a class="popup_menu_item tight" href="?l=french&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'french' ); return false;">Français (французский)</a>
+        <a class="popup_menu_item tight" href="?l=italian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'italian' ); return false;">Italiano (итальянский)</a>
+        <a class="popup_menu_item tight" href="?l=hungarian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'hungarian' ); return false;">Magyar (венгерский)</a>
+        <a class="popup_menu_item tight" href="?l=dutch&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'dutch' ); return false;">Nederlands (нидерландский)</a>
+        <a class="popup_menu_item tight" href="?l=norwegian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'norwegian' ); return false;">Norsk (норвежский)</a>
+        <a class="popup_menu_item tight" href="?l=polish&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'polish' ); return false;">Polski (польский)</a>
+        <a class="popup_menu_item tight" href="?l=portuguese&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'portuguese' ); return false;">Português (португальский)</a>
+        <a class="popup_menu_item tight" href="?l=brazilian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'brazilian' ); return false;">Português-Brasil (бразильский
+            португальский)</a>
+        <a class="popup_menu_item tight" href="?l=romanian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'romanian' ); return false;">Română (румынский)</a>
+        <a class="popup_menu_item tight" href="?l=finnish&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'finnish' ); return false;">Suomi (финский)</a>
+        <a class="popup_menu_item tight" href="?l=swedish&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'swedish' ); return false;">Svenska (шведский)</a>
+        <a class="popup_menu_item tight" href="?l=turkish&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'turkish' ); return false;">Türkçe (турецкий)</a>
+        <a class="popup_menu_item tight" href="?l=vietnamese&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'vietnamese' ); return false;">Tiếng Việt (вьетнамский)</a>
+        <a class="popup_menu_item tight" href="?l=ukrainian&amp;snr=1_14_4__global-header"
+            onclick="ChangeLanguage( 'ukrainian' ); return false;">Українська (украинский)</a>
+        <a class="popup_menu_item tight" href="http://translation.steampowered.com" target="_blank">Помогите
+            нам с переводом Steam</a>
+    </di> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="responsive-header">
+        <div class="responsive-nav">
+            <img class="responsive-nav__burger" src="img/respponsive/header_menu_hamburger.png" alt="">
+            <div class="responsive-wrapper">
+                <img class="responsive-nav__logo" src="img/respponsive/header_logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bannerHome">
+        <section class="home">
+            <ul class="home-menu">
+                <li class="home-menu-item"><a class="home-menu-item__link" href="">Ваш магазин<img
+                            class="home-menu-item__img" src="img/down-arrow.png" alt=""></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Главная страница</a>
+                        </li>
+                        <li class="dropdown-menu__item">
+                            <div class="hr"></div>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Недавно
+                                просмотренные</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Кураторы Steam</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Недавно обновлённые</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="home-menu-item"><a class="home-menu-item__link" href="">Игры<img class="home-menu-item__img"
+                            src="img/down-arrow.png" alt=""></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Бесплатно</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Ранний доступ</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Демо</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Виртуальная
+                                реальность</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Поддержка
+                                контроллеров</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Для интернет-кафе</a>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Remote Play</a></li>
+                        <li class="dropdown-menu__item">
+                            <div class="hr"></div>
+                        </li>
+                        <li class="dropdown-menu__item">
+                            <div class="dropdown-menu__subparagraph">Платформы</div>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">macOS</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">SteamOS и Linux</a></li>
+                        <li class="dropdown-menu__item">
+                            <div class="hr"></div>
+                        </li>
+                        <li class="dropdown-menu__item">
+                            <div class="dropdown-menu__subparagraph">Дополнительный контент</div>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Саундтреки</a></li>
+                    </ul>
+                    <ul class="dropdown-menu" id="dropdown-menu-col-2">
+                        <li class="dropdown-menu__item">
+                            <div class="dropdown-menu__subparagraph">Жанры</div>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Гонки</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Инди</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Казуальная игра</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">ММО</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Приключение</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Ролевая игра</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Симулятор</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Спортивная игра</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Стратегия</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Экшн</a></li>
+                        <li class="dropdown-menu__item">
+                            <div class="hr"></div>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Больше популярных
+                                меток</a></li>
+                    </ul>
+                </li>
+                <li class="home-menu-item"><a class="home-menu-item__link" href="">Программы<img
+                            class="home-menu-item__img" src="img/down-arrow.png" alt=""></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Программы</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Education</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Анимация и
+                                моделирование</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Дизайн и илюстрация</a>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Обработка видео</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Обработка фото</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Публикация в сети</a>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Работа со звуком</a>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Разработка игр</a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Утилиты</a></li>
+                    </ul>
+                </li>
+                <li class="home-menu-item"><a class="home-menu-item__link" href="">Устройства<img
+                            class="home-menu-item__img" src="img/down-arrow.png" alt=""></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Valve
+                                Index<sup>&reg;</sup></a></li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">Steam Controller</a>
+                        </li>
+                        <li class="dropdown-menu__item"><a href="#" class="dropdown-menu__link">HTC Vive</a></li>
+                    </ul>
+                </li>
+                <li class="home-menu-item"><a class="home-menu-item__link" href="">Новости</a></li>
+                <li class="home-menu-item"><a class="home-menu-item__link" href="">Лаборатории</a></li>
+                <li class="home-menu-item-form">
+                    <div class="border-form">
+                        <form class="search-form" action="">
+                            <input type="text" class="search-form-text" placeholder="  поиск по магазину">
+                            <a href=""><img class="search-form__icon" src="img/search_icon_btn.png" alt=""></a>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <img class="bannerHome-img" src="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/7a050751ecd602b05f279736/page_bg_russian.png?t=1592230008" alt="">
+    </div>  
+
+
+
+
+    <div class="sliderHome">
+        <div class="home-cluster-content">
+            <div class="home-page-content">
+                <h2 class="home-page-content__title">Популярное и рекомендуемое</h2>
+                <div class="carousel-container">
+                    <div class="carousel-items">
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1237950/STAR_WARS_Battlefront_II/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1237950/capsule_616x353.jpg?t=1591889411"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>STAR WARS™ Battlefront™ II</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1237950/ss_a0bb86ca908239a33c1bba05bd5e3743d11f9d4c.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1237950/ss_741f131aba46c488d750062c1b5715c286681e9d.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1237950/ss_5b05cfc5e4e6a3f4bde51f2b20370e5f367bddf4.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1237950/ss_6a84c15d3d4ecacdb36545be857d208d6c7d3e92.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-50%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">2499 руб.</div>
+                                        <div class="discount-final-price">1249 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/capsule_616x353.jpg?t=1583253547"
+                                    alt="">
+                            </div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Red Dead Redemption 2</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item">
+                                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.600x338.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="screenshots-item">
+                                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.600x338.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="screenshots-item">
+                                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/ss_668dafe477743f8b50b818d5bbfcec669e9ba93e.600x338.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="screenshots-item">
+                                        <img src="https://steamcdn-a.akamaihd.net/steam/apps/1174180/ss_d1a8f5a69155c3186c65d1da90491fcfd43663d9.600x338.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <!-- <div class="discount-pct"></div> -->
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price"></div>
+                                        <div class="discount-final-price">2499 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/capsule_616x353.jpg?t=1590658643"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Cyberpunk 2077</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/ss_f384a5ed5ec31dcc0fbeaeb093b47dd0ebffb398.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/ss_9beef14102f164fa1163536d0fb3a51d0a2e4a3f.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/ss_1e7b9db9ae7eefb3906380e0515c4c28b9134f28.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1091500/ss_b0e953c8959c6e0ba1bf6f024239b6b35cf4fc54.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Оформите предзаказ</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <!-- <div class="discount-pct"></div> -->
+                                    <div class="discount-prices">
+                                        <div class="discount-final-price">1999 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1222680/capsule_616x353.jpg?t=1591830375"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Need for Speed™ Heat</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1222680/ss_4127c58a6a10124b4ba28375ec937a977aba37fc.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1222680/ss_1f752c037d7cbab2e1658f36d5c76d11e91e4fec.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1222680/ss_720840b2cb26c38d0e4ad32085afb5f46b2bb6c6.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1222680/ss_6994870577a41882c458cd00d852d8092116c81c.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-60%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">3999 руб.</div>
+                                        <div class="discount-final-price">1599 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/271590/capsule_616x353.jpg?t=1586539531"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Grand Theft Auto V</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/271590/ss_1487c2c7ddd9a1ae6b55f7e50d5d63ada6915921.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/271590/ss_62a2f95c1784f138c3abbecf376c5cc99cc94a57.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/271590/ss_a5ca40b51e95d5c592e5eb77b3d78d5149ea5fd6.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/271590/ss_e929649b2b98ad76795d92d8489470bc5dbffddb.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <!-- <div class="discount-pct"></div> -->
+                                    <div class="discount-prices">
+                                        <!-- <div class="discount-original-price">799 руб.</div> -->
+                                        <div class="discount-final-price">1499 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/952060/Resident_Evil_3/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/952060/capsule_616x353.jpg?t=1591585542"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Resident Evil 3</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/952060/ss_4f6eaac14b8e02c0a68a9c9f7627dd84cde1abb8.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/952060/ss_34f01910d65fb171a27e058cb74623c0eb53ba69.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/952060/ss_bec8b7cef716135ea5bbd726a3342ed9ca475b31.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/952060/ss_77eda710487b89293f109cf7dcf96b4ffab0d1a1.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-34%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">1999 руб.</div>
+                                        <div class="discount-final-price">1319 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1238810/Battlefield_V/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1238810/capsule_616x353.jpg?t=1592012934"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Battlefield™ V</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238810/ss_94465bc4610c0bf5d928553a2c0c1c051c4f24d2.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238810/ss_66573093f9d887728c7d6e8894bc13a99eb7e61c.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238810/ss_16bd815ff392ecc50f0dda493bc2c2db0cbf4895.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238810/ss_1d38895ccc9beb342a0759fdaa7bd98a0c57d024.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-50%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">3499 руб.</div>
+                                        <div class="discount-final-price">1749 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/sub/54029/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/subs/54029/capsule_616x353.jpg?t=1544227353"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>CS:GO PRIME STATUS UPGRADE</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/730/ss_34090867f1a02b6c17652ba9043e3f622ed985a9.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/730/ss_d87c102d028d545c877363166c9d8377014f0c23.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/730/ss_ccc4ce6edd4c454b6ce7b0757e633b63aa93921d.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/730/ss_9db552fd461722f1569e3292d8f2ea654c8ffdef.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <!-- <div class="discount-pct">-33%</div> -->
+                                    <div class="discount-prices">
+                                        <!-- <div class="discount-original-price">1699 руб.</div> -->
+                                        <div class="discount-final-price">1020 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/252490/Rust/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/252490/capsule_616x353.jpg?t=1590681021"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Rust</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/252490/ss_39740ea705e70bdf3d5c3f72167f2b94d2db92f8.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/252490/ss_9652dbaf2de41b8c8f8305af714ee258564c453d.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/252490/ss_f05168330593f4f476cd4a6a6094b248c7c8556e.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Ранний доступ цже открыт</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <!-- <div class="discount-pct"></div> -->
+                                    <div class="discount-prices">
+                                        <div class="discount-final-price">725 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <span class="platforms-img mac"></span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/359320/Elite_Dangerous/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/359320/capsule_616x353.jpg?t=1591193929"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Elite Dangerous</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/359320/ss_3994befb657eff578b96d38d0f359e5816af1457.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/359320/ss_b313fd024f20903cf7760993907870d04d9bff04.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/359320/ss_1f41f152d74158de4931c3fd1032ddcec81ccb06.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/359320/ss_deaab8a77e0536db533b7e8374381ea7792fac2f.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Вышло обновление</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-70%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">799 руб.</div>
+                                        <div class="discount-final-price">299 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1238840/Battlefield_1/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1238840/capsule_616x353.jpg?t=1591923892"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>Battlefield™ 1</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238840/ss_b914b0daf3c46d908d403bdec2881cf2b8d34915.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238840/ss_25fbf466cb86f59e47ad06827788c003f079d403.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238840/ss_a608c2726850f7ee69d0db51282811dc33d9d083.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1238840/ss_a42f55d9b2b1d2084a7dff4540de42b7d4c36f7f.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-50%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">2499 руб.</div>
+                                        <div class="discount-final-price">1249 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <span class="platforms-img mac"></span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="store-main-capsule broadcast_capsule app_impression_tracked focus"
+                            href="https://store.steampowered.com/app/1172380/_/">
+                            <div class="capsule main_capsule"><img
+                                    src="https://steamcdn-a.akamaihd.net/steam/apps/1172380/capsule_616x353.jpg?t=1588955280"
+                                    alt=""></div>
+                            <div class="info">
+                                <div class="app-name">
+                                    <div>ЗВЁЗДНЫЕ ВОЙНЫ Джедаи: Павший Орден™</div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1172380/ss_763dcc7434f072d6fdbb9037b4d37f4474e29d9b.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1172380/ss_045d78dba983384cf8282e617e7ba04e40a9e2e9.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1172380/ss_695a5724e306269d81ca0118d86308a170c9e913.600x338.jpg"
+                                            alt=""></div>
+                                    <div class="screenshots-item"><img
+                                            src="https://steamcdn-a.akamaihd.net/steam/apps/1172380/ss_cfad9481db1a3b68fb5fcb2298cfc74bcb6a469e.600x338.jpg"
+                                            alt=""></div>
+                                </div>
+                                <div class="reason">
+                                    <div class="main">Уже доступно</div>
+                                    <div class="additional">
+                                        <div>Лидер продаж</div>
+                                    </div>
+                                </div>
+                                <div class="discount-block  no_discount discount-block-inline">
+                                    <div class="discount-pct">-50%</div>
+                                    <div class="discount-prices">
+                                        <div class="discount-original-price">3499 руб.</div>
+                                        <div class="discount-final-price">1749 руб.</div>
+                                    </div>
+                                </div>
+                                <div class="platforms">
+                                    <span class="platforms-img win"></span>
+                                    <!-- <span class="platforms-img mac"></span> -->
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="carousel-thumbs">
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(1)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(2)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(3)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(4)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(5)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(6)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(7)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(8)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(9)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(10)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(11)"></div>
+                        <div class="carousel-thumbs__switch" onclick="currentSlide(12)"></div>
+                    </div>
+                    <div class="arrow left" onclick="plusSlides(-1)"><img src="img/left-chevron.png" alt=""></div>
+                    <div class="arrow right" onclick="plusSlides(1)"><img src="img/right-chevron.png" alt=""></div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="nav-home">
+            <div class="nav-home-items">
+                <a href="https://store.steampowered.com/digitalgiftcards/">
+                    <img class="nav-home-items__img"
+                        src="https://steamstore-a.akamaihd.net/public/images//gift/steamcards_promo_02.png" alt="">
+                </a>
+                <div class="nav-home-items__title-1">Подарочные карты</div>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/digitalgiftcards/">Теперь в
+                    магазине Steam</a>
+            </div>
+            <div class="nav-home-items">
+                <div class="nav-home-items__title-2">Рекомендуется</div>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/recommended/friendactivity/"><span
+                        class="icon friends"></span> Друзьями</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/curators/"><span
+                        class="icon curators""></span>Кураторами</a>
+            <a class=" nav-home-items__link" href="https://store.steampowered.com/tag/browse/#yours"><span
+                            class="icon tags"></span>По меткам</a>
+            </div>
+            <div class="nav-home-items">
+                <div class="nav-home-items__title-2">Подарочные карты</div>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/app/1237970/Titanfall_2/"><span
+                        class="icon queue"></span>Рекомендации</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/app/1032450/Fallen_Hearts/"><span
+                        class="icon queue_new"></span>Новинки</a>
+            </div>
+            <div class="nav-home-items">
+                <div class="nav-home-items__title-2">Категории</div>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/search/?filter=topsellers"><span
+                        class="icon top_sellers"></span>Лидеры продаж</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/updated/all/"><span
+                        class="icon updated"></span>Недавно обновленные</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/explore/new/"><span
+                        class="icon recent"></span>Новинки</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/explore/upcoming/"><span
+                        class="icon upcoming"></span>Скоро выйдут</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/specials#tab=TopSellers"><span
+                        class="icon discounts"></span>Скидки</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/vr/"><span
+                        class="icon vr"></span>Виртуальная реальность</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/controller/"><span
+                        class="icon controller"></span>Поддержка контроллеров</a>
+            </div>
+            <div class="nav-home-items">
+                <div class="nav-home-items__title-2">Поиск по жанру</div>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/genre/Free%20to%20Play/">Бесплатно</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/genre/Early%20Access/">Ранний
+                    доступ</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%93%D0%BE%D0%BD%D0%BA%D0%B8/">Гонки</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%98%D0%BD%D0%B4%D0%B8/">Инди</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%9A%D0%B0%D0%B7%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B8%D0%B3%D1%80%D0%B0/">Казуальная
+                    игра</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%9C%D0%9C%D0%9E/">ММО</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/">Приключение</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%A0%D0%BE%D0%BB%D0%B5%D0%B2%D0%B0%D1%8F%20%D0%B8%D0%B3%D1%80%D0%B0/">Ролевая
+                    игра</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%A1%D0%B8%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/">Симулятор</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%B8%D0%B3%D1%80%D0%B0/">Спортивная
+                    игра</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%A1%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%8F/">Стратегия</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%AD%D0%BA%D1%88%D0%B5%D0%BD/">Экшн</a>
+            </div>
+            <div class="nav-home-items">
+                <div class="nav-home-items__title-2">Ваши метки</div>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B0%D1%8F/">Командная</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%A1%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B8%D0%B3%D1%80%D0%B0%20%D0%BF%D0%BE%20%D1%81%D0%B5%D1%82%D0%B8/">Совместная
+                    игр по сети</a>
+                <a class="nav-home-items__link" href="https://store.steampowered.com/tags/ru/MOBA/">MOBA</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%9A%D1%80%D0%B8%D0%BC%D0%B8%D0%BD%D0%B0%D0%BB/">Криминал</a>
+                <a class="nav-home-items__link"
+                    href="https://store.steampowered.com/tags/ru/%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%D1%81%D0%BF%D0%BE%D1%80%D1%82/">Киберспорт</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="home-page-stock">
+        <div class="home-page-content takeunder">
+            <a href="https://store.steampowered.com/sale/gamefestival?snr=1_4_4__promo-takeunder" class="home-page-takeunder">
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <div class="home-ctn">
+        <div class="home-page-content special-offers">
+          <h2 class="home-page-content__title">Специальные предложения <span class="right"><a class="right__link"
+                href="https://store.steampowered.com/specials#tab=TopSellers"><span>Больше продуктов</span></a></span></h2>
+          <div class="carousel-container spotlight">
+            <div class="carousel-items">
+                
+                <div class="carousel-items-compilation">
+                    <div class="couple">
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/489830/header.jpg?t=1590515887" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-60%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">1399 pуб.</div>
+                              <div class="discount-final-price">559 pуб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/271590/header.jpg?t=1592866696" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-50%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">1499 руб.</div>
+                              <div class="discount-final-price">749 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="couple">
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/subs/94174/header_ratio.jpg?t=1476893662" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-75%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">2998 руб.</div>
+                              <div class="discount-final-price">749 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+          
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/381210/header.jpg?t=1592323656" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-60%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">499 руб.</div>
+                              <div class="discount-final-price">199 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="couple">
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/588650/header.jpg?t=1590998481" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-40%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">499 руб.</div>
+                              <div class="discount-final-price">299 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+          
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/815370/header.jpg?t=1592504280" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-20%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">465 руб.</div>
+                              <div class="discount-final-price">372 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+                <div class="carousel-items-compilation" style="display: none">
+                    <div class="couple">
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/746850/header.jpg?t=1593019359" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-25%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">499 pуб.</div>
+                              <div class="discount-final-price">336 pуб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/335300/header.jpg?t=1588788240" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-75%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">1199 руб.</div>
+                              <div class="discount-final-price">299 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="couple">
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/389730/header.jpg?t=1585037150" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-75%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">1199 руб.</div>
+                              <div class="discount-final-price">299 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+          
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/418240/header_alt_assets_0.jpg?t=1592923461" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-85%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">799 руб.</div>
+                              <div class="discount-final-price">119 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="couple">
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/1100600/header.jpg?t=1584981392" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-50%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">2299 руб.</div>
+                              <div class="discount-final-price">1149 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+          
+                      <a href="" class="carousel-items-cards">
+                        <img class="carousel-items-cards__img"
+                          src="https://steamcdn-a.akamaihd.net/steam/apps/1145360/header_alt_assets_3.jpg?t=1593026339" alt="">
+                        <div class="carousel-items-cards-description">
+                          <div class="discount-block">
+                            <div class="discount-pct">-20%</div>
+                            <div class="discount-prices">
+                              <div class="discount-original-price">465 руб.</div>
+                              <div class="discount-final-price">372 руб.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+    
+
+
+
+
+                <div class="carousel-thumbs">
+                  <div class="carousel-thumbs__swh" onclick="curSlide(1)"></div>
+                  <div class="carousel-thumbs__swh" onclick="curSlide(2)"></div>
+              </div>
+
+                
+            <div class="arrow left" onclick="plusStocks(-1)"><img src="img/left-chevron.png" alt=""></div>
+            <div class="arrow right" onclick="plusStocks(1)"><img src="img/right-chevron.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
